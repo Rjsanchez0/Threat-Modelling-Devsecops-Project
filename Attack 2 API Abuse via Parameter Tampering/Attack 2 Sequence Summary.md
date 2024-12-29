@@ -13,7 +13,7 @@ flowchart TD
     style Installation fill:#DC7633,stroke:#000,stroke-width:2px
     style Command_Control fill:#CA6F1E,stroke:#000,stroke-width:2px
     style Actions_Objectives fill:#BA4A00,stroke:#000,stroke-width:2px
-    style MITRE fill:#85C1E9,stroke:#000,stroke-width:2px
+    style MITRE fill:#D3D3D3,stroke:#000,stroke-width:2px
 
     Reconnaissance[Reconnaissance] -->|Attacker identifies Transaction API endpoint| Weaponization[Weaponization]
     Weaponization[Weaponization] -->|Craft tampered API requests with malicious parameters| Delivery[Delivery]
@@ -25,7 +25,7 @@ flowchart TD
     Actions_Objectives[Actions on Objectives] -->|Perform unauthorized financial transactions| Actions_Objectives[Actions on Objectives]
 
     subgraph MITRE_Attack[MITRE ATT&CK Techniques]
-    style MITRE_Attack fill:#85C1E9,stroke:#000,stroke-width:2px
+    style MITRE_Attack fill:#D3D3D3,stroke:#000,stroke-width:2px
     Reconnaissance -->|T1595 - Active Scanning| MITRE
     Delivery -->|T1190 - Exploit Public-Facing Application| MITRE
     Exploitation -->|T1078 - Valid Accounts| MITRE
